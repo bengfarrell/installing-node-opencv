@@ -15,12 +15,16 @@ http://sourceforge.net/projects/opencvlibrary/files/opencv-win/2.3.1/OpenCV-2.3.
 Extract and move files anywhere, I prefer just puttin them on my C: root in a folder called "opencv"
 
 
-2. Download pkg-config:
--------------------
+2. Download GTK All in One Bundle
+---------------------------------
 
-http://pkgconfig.freedesktop.org/releases/pkg-config-0.28.tar.gz
+http://win32builder.gnome.org/gtk+-bundle_3.6.4-20131201_win64.zip
 
-Extract and move files anywhere, I prefer just puttin them on my C: root in a folder called "pkg-config"
+Extract and move files anywhere, I prefer just puttin them on my C: root in a folder called "gtk"
+
+This contains things you need like pkg-config, libg, and more (seemingly even installing these components one by one may not cut it)
+
+Note: The above link is for 64bit, if you are running 32bit, find the other bundle
 
 
 2. Add Environmental Variables:
