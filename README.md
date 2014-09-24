@@ -4,8 +4,8 @@ installing-node-opencv
 instructions for installing Node OpenCV
 
 
-Windows
-=======
+Windows 8.1
+===========
 
 1. Download OpenCV:
 -------------------
@@ -39,7 +39,7 @@ Note: have the x86 version of node? Use \build\x86 instead
 
 
 
-3. Add Environmental Variables:
+3. Add a PATH entry:
 -------------------------------
 
 Variable name: PATH
@@ -53,11 +53,20 @@ Note: value is where you put the "gtk" folder in step 2
 
 
 
-4. Install Microsoft Visual Studio Express 2010
+4. Install Microsoft Visual Studio Express 2013
 ------------------------------------------------
 
-(why 2010? OpenCV 2.3.1 only has libs for 2010...vc10 is VS 2010)
+you need the MSVS Build tools
 
+
+
+
+5. NPM Install opencv
+---------------------------------------------
+
+npm install --save-dev --msvs_version=2013
+
+For some reason, npm falls back to defaulting to the VS2010 tools, which probably don't exist on your machine
 
 
 
