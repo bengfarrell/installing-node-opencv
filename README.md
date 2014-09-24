@@ -39,7 +39,21 @@ Note: have the x86 version of node? Use \build\x86 instead
 
 
 
-3. Install Microsoft Visual Studio Express 2010
+3. Add Environmental Variables:
+-------------------------------
+
+Variable name: PATH
+
+Add to path: C:\gtk\bin
+
+Here you're adding whatever's in gtk\bin to the system path, so you can use all the libraries in bin like libg, pkg-config, etc
+
+Note: value is where you put the "gtk" folder in step 2
+
+
+
+
+4. Install Microsoft Visual Studio Express 2010
 ------------------------------------------------
 
 (why 2010? OpenCV 2.3.1 only has libs for 2010...vc10 is VS 2010)
