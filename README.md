@@ -101,6 +101,8 @@ For some reason, npm falls back to defaulting to the VS2010 tools, which probabl
  --msvs_version flag, there might not be a point in saving it in your package.json file as npm install won't be useful without the flag)
 
 
+
+
 6b. APM Install for Atom-Shell
 ------------------------------
 
@@ -133,6 +135,8 @@ Did it fail?
 2. Check that your opencv.pc file points to the x86 path (not the x64 path)
 
 
+
+
 7. Copy DLLs
 ---------------------------------------------
 
@@ -158,27 +162,14 @@ NOW you should be good to go.
 Did it fail? If using Atom-Shell or Node-Webkit, be sure to have copied the 32bit/x86 DLL files in this step.
 
 
+
+
 8. Final Step
 -------------
 
 Let's do some facial recognition on the Mona Lisa (as per the included examples)
 
-Create a file in your folder root called "main.js"
-
-Copy the following code into main.js:
-
-var cv = require('opencv');
-cv.readImage("mona.png", function(err, im){
-  im.detectObject("haarcascade_frontalface_alt.xml", {}, function(err, faces){
-        for (var i=0;i<faces.length; i++){
-            var x = faces[i];
-            im.ellipse(x.x + x.width/2, x.y + x.height/2, x.width/2, x.height/2);
-        }
-        im.save('out.png');
-    });
-});
-
-Find "mona.png" and "haarcascade_frontalface_alt.xml" in the node-opencv example files and copy them to your project root.
+Copy the main.js file along with mona.png and haarcascade_frontalface_alt.xml from this repo into your project root
 
 Now in the command line, from the root of your project, issue the command "node main.js".
 
