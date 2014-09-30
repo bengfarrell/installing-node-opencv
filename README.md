@@ -52,6 +52,7 @@ Note: The above link is for 64bit and I'm compiling with no issues even when tar
 Variable name: OPENCV_DIR
 
 Variable value for 64bit (typical use of Node.js): C:\opencv\build\x64\vc12
+
 Variable value for 32bit (using Atom-Shell or Node Webkit): C:\opencv\build\x64\vc12
 
 Note: value is where you put the "opencv" folder in step 1
