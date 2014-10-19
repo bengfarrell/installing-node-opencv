@@ -112,17 +112,8 @@ and opencv.pc files reflect the 32bit paths.
 
 Documentation can be found here: https://github.com/atom/atom-shell/blob/master/docs/tutorial/using-native-node-modules.md
 
-For the purposes of this document, I'll pick the APM way. Peter Braden's original "node-opencv" project does not support Node 0.11.x yet, and
-therefore will not support either Atom-Shell or recent versions of Node Webkit (both Node 0.11.x).
-
-Fortunately, Mark Moissette has forked the original project, and updated it for Node 0.11.x. Given some time and testing, we hope to see this merged back into
-Peter's original project.
-
-Mark's fork relies on NAN (https://www.npmjs.org/package/nan) which is an abstraction layer to help deal with changes from Node.js 0.10 to 0.11 and allow projects
-to compile for either versions of Node (or rather Node 0.8 through 0.12)
-
-So, we need to install 2 packages here: NAN, and the forked Node OpenCV. If you don't have a package.json file in your project, simply copy the one in this repo to your
-project root. If you do have a package.json file, simply copy over the 2 dependency entries.
+OpenCV 1.0 relies on NAN (https://www.npmjs.org/package/nan) which is an abstraction layer to help deal with changes from Node.js 0.10 to 0.11 and allow projects
+to compile for either versions of Node (or rather Node 0.8 through 0.12). This is just a side note as the use of NAN is seamless to the install.
 
 Since we're using the APM way, we'll need to install the Atom code editor which comes with APM (or the Atom Package Manager). APM injects some
 additional parameters when compiling the C++ code. The easiest way to get APM set up is to install Atom via "Chocalatey" documented here:

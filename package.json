@@ -3,9 +3,6 @@
     "version": "0.0.1",
     "description": "use this package JSON at the root of your project for Atom Shell use of OpenCV",
     "dependencies": {
-        "opencv": "git+https://git@github.com/kaosat-dev/node-opencv.git#nodev11.x"
-    },
-    "devDependencies": {
-        "nan": ""
+        "opencv": "~1.0.0"
     }
 }
